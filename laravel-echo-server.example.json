@@ -1,0 +1,40 @@
+{
+    "authHost": "https://b.epay",
+    "authEndpoint": "/broadcasting/auth",
+    "clients": [
+        {
+            "appId": "818aab6fb0b790c4",
+            "key": "25bf2b81d859a191634940b4adf2c754"
+        }
+    ],
+    "database": "redis",
+    "databaseConfig": {
+        "redis": {
+            "port": "6379",
+            "host": "127.0.0.1"
+        },
+        "sqlite": {
+            "databasePath": "/database/laravel-echo-server.sqlite"
+        }
+    },
+    "devMode": true,
+    "host": null,
+    "port": "6001",
+    "protocol": "https",
+    "socketio": {},
+    "sslCertPath": "/Applications/MAMP/htdocs/epay/ssl_keys/b.epay.crt",
+    "sslKeyPath": "/Applications/MAMP/htdocs/epay/ssl_keys/b.epay.key",
+    "sslCertChainPath": "",
+    "sslPassphrase": "",
+    "subscribers": {
+        "http": true,
+        "https": true,
+        "redis": true
+    },
+    "apiOriginAllow": {
+        "allowCors": true,
+        "allowOrigin": "http://b.epay:80",
+        "allowMethods": "get, post",
+        "allowHeaders": "Origin, Content-Type, X-Auth-Token, X-Requested-With, Accept, Authorization, X-CSRF-TOKEN, X-Socket-Id"
+    }
+}

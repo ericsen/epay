@@ -1,0 +1,25 @@
+{
+    "apps": [
+        {
+            "name": "echo-server",
+            "script": "laravel-echo-server",
+            "args": "start",
+            "env": {
+                "out_file": "/dev/null",
+                "error_file": "/dev/null",
+                "watch": false
+            },
+            "env_dev": {}
+        },
+        {
+            "name": "horizon",
+            "script": "php artisan horizon",
+            "env": {
+                "out_file": "/dev/null",
+                "error_file": "/dev/null",
+                "watch": false
+            },
+            "env_dev": {}
+        }
+    ]
+}
